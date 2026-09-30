@@ -1,0 +1,53 @@
+/* =========================================================
+   CAMI · Capa de accesibilidad WCAG 2.1 AA (v2.1)
+   Se carga después de los estilos base. Ver auditoria-wcag.html
+   ========================================================= */
+:root{
+  --cami-azul:#006BAD;            /* antes #0077C0 (4.48:1 sobre fondo suave) → 5.3:1 */
+  --cami-azul-hover:#00598F;
+  --cami-magenta-texto:#C2006F;   /* magenta para texto; #EC008C solo decorativo */
+  --wa:#15803D;                   /* antes #1FAF55 (2.9:1 con texto blanco) → 5.0:1 */
+  --wa-hover:#116B33;
+  --line-strong:#758291;          /* bordes de campos de formulario ≥ 3:1 */
+  --error:#B42318;
+  --bs-link-color:var(--cami-azul); --bs-link-hover-color:var(--cami-azul-hover);
+  --bs-link-color-rgb:0,107,173; --bs-link-hover-color-rgb:0,89,143;
+}
+/* 2.4.1 · Saltar al contenido */
+.skip-link{position:absolute;left:12px;top:-200px;z-index:2000;background:#fff;color:var(--cami-azul);font-weight:600;padding:.7rem 1rem;border-radius:12px;box-shadow:0 10px 30px -10px rgba(16,40,70,.4);text-decoration:underline}
+.skip-link:focus{top:12px}
+/* 2.4.7 · Foco visible y consistente */
+:focus-visible{outline:3px solid var(--cami-azul);outline-offset:2px}
+.btn:focus-visible,.svc:focus-visible,.accordion-button:focus-visible,.nav-link:focus-visible,.dropdown-item:focus-visible,
+.form-control:focus-visible,.form-select:focus-visible,.form-check-input:focus-visible,.btn-close:focus-visible{outline:3px solid var(--cami-azul)!important;outline-offset:2px}
+.mobile-bar .btn:focus-visible{outline-offset:1px}
+/* 1.4.3 · Contraste */
+.kicker.accent{color:var(--cami-magenta-texto)}
+.btn-whatsapp{--bs-btn-bg:var(--wa);--bs-btn-border-color:var(--wa);--bs-btn-hover-bg:var(--wa-hover);--bs-btn-hover-border-color:var(--wa-hover);--bs-btn-active-bg:var(--wa-hover);--bs-btn-active-border-color:var(--wa-hover);--bs-btn-focus-shadow-rgb:21,128,61}
+.btn-primary{--bs-btn-focus-shadow-rgb:0,107,173}
+.wa-float{background:var(--wa)}
+.wa-float:hover{background:var(--wa-hover)}
+/* 1.4.1 · Enlaces dentro de texto: no solo por color */
+.info-list a{color:var(--ink);text-decoration:underline;text-underline-offset:.18em}
+.info-list a:hover{color:var(--cami-azul)}
+/* 1.4.11 · Contraste de componentes (bordes de campos) */
+.form-control,.form-select{border-color:var(--line-strong)}
+.form-check-input{border-color:var(--line-strong);width:1.15em;height:1.15em}
+.form-check-input:checked{background-color:var(--cami-azul);border-color:var(--cami-azul)}
+/* 3.3.1 · Mensajes de error */
+.form-control.is-invalid,.form-select.is-invalid,.form-check-input.is-invalid{border-color:var(--error)}
+.invalid-feedback,.field-error{color:var(--error);font-weight:500}
+.req{color:var(--muted);font-weight:400;font-size:.85em}
+/* 1.3.1 · Encabezados del pie (antes h5) */
+.site-footer h2{font-size:.9rem;font-weight:700;color:var(--ink);margin-bottom:.8rem;letter-spacing:0}
+/* Área táctil mínima en enlaces sueltos del pie */
+.site-footer a{padding:.3rem 0}
+/* 2.1.1 · Carrusel desplazable operable con teclado */
+.track:focus-visible{outline:3px solid var(--cami-azul);outline-offset:4px;border-radius:12px}
+
+/* ===== v2.2 · Objetivos táctiles de al menos 44 px (teléfonos, WhatsApp y pie) ===== */
+.site-footer a{display:flex;align-items:center;min-height:44px;padding:0}
+.site-footer .small a,.site-footer .small a.d-inline{display:inline-flex!important;align-items:center;min-height:44px}
+.topbar a{display:inline-flex;align-items:center;min-height:44px}
+.info-list a{display:inline-flex;align-items:center;min-height:44px}
+.done-panel .btn,.side-card .btn{min-height:44px}
