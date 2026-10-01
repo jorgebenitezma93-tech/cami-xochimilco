@@ -34,11 +34,11 @@
     'html.a11y-espaciado p,html.a11y-espaciado li,html.a11y-espaciado dd{letter-spacing:.03em;word-spacing:.12em}',
     'html.a11y-sin-movimiento *,html.a11y-sin-movimiento *::before,html.a11y-sin-movimiento *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}',
     'html.a11y-sin-movimiento .reveal{opacity:1!important;transform:none!important}',
-    '.a11y-fab{position:fixed;left:16px;bottom:16px;z-index:1045;width:52px;height:52px;border-radius:50%;border:2px solid #fff;background:#006BAD;color:#fff;display:grid;place-items:center;box-shadow:0 10px 26px -8px rgba(0,0,0,.4);cursor:pointer}',
-    '.a11y-fab:hover{background:#00598F}',
-    '.a11y-fab svg{width:28px;height:28px;fill:currentColor}',
+    '.a11y-fab{position:fixed;left:16px;bottom:16px;z-index:1045;width:56px;height:56px;padding:0;border-radius:50%;border:2px solid #006BAD;background:#fff;display:grid;place-items:center;box-shadow:0 10px 26px -8px rgba(0,0,0,.4);cursor:pointer}',
+    '.a11y-fab:hover{background:#EEF6FC}',
+    '.a11y-fab svg{width:42px;height:42px;display:block}',
     '@media (max-width:767.98px){.a11y-fab{bottom:calc(78px + env(safe-area-inset-bottom))}}',
-    '.a11y-panel{position:fixed;left:16px;bottom:80px;z-index:1046;width:min(360px,calc(100vw - 32px));max-height:calc(100dvh - 110px);overflow:auto;background:#fff;color:#1B2430;border:1px solid #758291;border-radius:18px;padding:18px 18px 16px;box-shadow:0 30px 70px -20px rgba(16,40,70,.45);font-size:1rem}',
+    '.a11y-panel{position:fixed;left:16px;bottom:80px;z-index:1046;width:min(360px,calc(100vw - 32px));max-height:calc(100vh - 110px);max-height:calc(100dvh - 110px);overflow:auto;background:#fff;color:#1B2430;border:1px solid #758291;border-radius:18px;padding:18px 18px 16px;box-shadow:0 30px 70px -20px rgba(16,40,70,.45);font-size:1rem}',
     '@media (max-width:767.98px){.a11y-panel{bottom:calc(142px + env(safe-area-inset-bottom))}}',
     '.a11y-panel[hidden]{display:none}',
     '.a11y-panel h2{font-size:1.15rem;font-weight:700;margin:0}',
@@ -78,7 +78,7 @@
     var fab = document.createElement("button");
     fab.type = "button"; fab.className = "a11y-fab"; fab.id = "a11yFab";
     fab.setAttribute("aria-expanded", "false"); fab.setAttribute("aria-controls", "a11yPanel");
-    fab.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a2 2 0 1 1 0 4 2 2 0 0 1 0-4zm8.5 6.1-5.5 1.1V13l2.3 7.2a1 1 0 0 1-1.9.6L13.2 15h-2.4l-2.2 5.8a1 1 0 0 1-1.9-.6L9 13V9.2L3.5 8.1a1 1 0 1 1 .4-2l6.1 1.2h4l6.1-1.2a1 1 0 1 1 .4 2z"/></svg><span class="visually-hidden">Opciones de accesibilidad</span>';
+    fab.innerHTML = '<svg viewBox="0 0 100 100" aria-hidden="true" focusable="false" fill="none" stroke-linecap="round"><circle cx="50" cy="52" r="40" stroke="#111" stroke-width="5"/><g fill="#fff"><circle cx="11.4" cy="41.6" r="10"/><circle cx="88.6" cy="41.6" r="10"/><circle cx="30" cy="86.6" r="10"/><circle cx="70" cy="86.6" r="10"/></g><path d="M11.4 41.6Q50 56 88.6 41.6M50 49 30 86.6M50 49 70 86.6" stroke="#111" stroke-width="4.5"/><g fill="#4FC3F7" stroke="#111" stroke-width="4"><circle cx="11.4" cy="41.6" r="6"/><circle cx="88.6" cy="41.6" r="6"/><circle cx="30" cy="86.6" r="6"/><circle cx="70" cy="86.6" r="6"/><circle cx="50" cy="27" r="11.5" stroke-width="4.5"/></g></svg><span class="visually-hidden">Opciones de accesibilidad</span>';
 
     var panel = document.createElement("div");
     panel.className = "a11y-panel"; panel.id = "a11yPanel"; panel.hidden = true;

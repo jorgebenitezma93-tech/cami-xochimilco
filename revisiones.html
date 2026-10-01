@@ -14,6 +14,22 @@
 <link href="assets/cami.css" rel="stylesheet">
 
 <script src="assets/cami-opciones.js"></script>
+<style>
+.round{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;margin-bottom:28px}
+@media(min-width:768px){.round{padding:36px}}
+.table-wrap{position:relative;overflow-x:auto;border:1px solid var(--line);border-radius:14px}
+.log{width:100%;min-width:820px;font-size:.92rem} .log th,.log td{padding:.55rem;border-top:1px solid var(--line);vertical-align:top}
+.log thead th{background:var(--bg-soft);border-top:0;font-weight:600}
+.log tbody th{white-space:nowrap}
+.mat{columns:2;padding-left:1.1rem} .sign{border-top:1px solid var(--line);padding-top:18px}
+.proto-steps{counter-reset:p;list-style:none;padding:0;margin:0;display:grid;gap:10px}
+@media(min-width:768px){.proto-steps{grid-template-columns:repeat(5,1fr)}}
+.proto-steps li{counter-increment:p;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;font-size:.92rem;color:var(--muted)}
+.proto-steps li::before{content:counter(p);display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:var(--cami-azul);color:#fff;font-weight:700;margin-bottom:8px}
+.proto-steps b{display:block;color:var(--ink)}
+.print-only{display:none}
+@media print{.navbar,.topbar,.mobile-bar,.site-footer,.no-print{display:none!important} .print-only{display:block} .round{break-inside:auto;border:0;padding:0} .table-wrap{overflow:visible} .log{min-width:0} textarea,input,select{border:0!important;padding:0!important;resize:none}}
+</style>
 </head>
 <body>
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false"><symbol id="bi-graph-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07"/></symbol><symbol id="bi-activity" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2"/></symbol><symbol id="bi-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/></symbol><symbol id="bi-arrow-up-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0z"/></symbol><symbol id="bi-bandaid" viewBox="0 0 16 16"><path d="M14.121 1.879a3 3 0 0 0-4.242 0L8.733 3.026l4.261 4.26 1.127-1.165a3 3 0 0 0 0-4.242M12.293 8 8.027 3.734 3.738 8.031 8 12.293zm-5.006 4.994L3.03 8.737 1.879 9.88a3 3 0 0 0 4.241 4.24l.006-.006 1.16-1.121ZM2.679 7.676l6.492-6.504a4 4 0 0 1 5.66 5.653l-1.477 1.529-5.006 5.006-1.523 1.472a4 4 0 0 1-5.653-5.66l.001-.002 1.505-1.492z"/>
@@ -209,9 +225,9 @@
       <ul class="navbar-nav ms-auto align-items-lg-center">
 <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
 <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-<li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
 <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
 <li class="nav-item"><a class="nav-link" href="index.html#contacto">Contacto</a></li>
+<li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
         <li class="nav-item ms-lg-2 my-2 my-lg-0"><a class="btn btn-primary w-100" href="citas.html"><i class="bi bi-calendar2-check me-2" aria-hidden="true"><svg><use href="#bi-calendar2-check"/></svg></i>Agendar cita</a></li>
       </ul>
     </div>
@@ -219,22 +235,7 @@
 </nav>
 <main id="contenido" tabindex="-1">
 
-<style>
-.round{background:#fff;border:1px solid var(--line);border-radius:24px;padding:22px;margin-bottom:28px}
-@media(min-width:768px){.round{padding:36px}}
-.table-wrap{position:relative;overflow-x:auto;border:1px solid var(--line);border-radius:14px}
-.log{width:100%;min-width:820px;font-size:.92rem} .log th,.log td{padding:.55rem;border-top:1px solid var(--line);vertical-align:top}
-.log thead th{background:var(--bg-soft);border-top:0;font-weight:600}
-.log tbody th{white-space:nowrap}
-.mat{columns:2;padding-left:1.1rem} .sign{border-top:1px solid var(--line);padding-top:18px}
-.proto-steps{counter-reset:p;list-style:none;padding:0;margin:0;display:grid;gap:10px}
-@media(min-width:768px){.proto-steps{grid-template-columns:repeat(5,1fr)}}
-.proto-steps li{counter-increment:p;background:#fff;border:1px solid var(--line);border-radius:16px;padding:16px;font-size:.92rem;color:var(--muted)}
-.proto-steps li::before{content:counter(p);display:grid;place-items:center;width:30px;height:30px;border-radius:10px;background:var(--cami-azul);color:#fff;font-weight:700;margin-bottom:8px}
-.proto-steps b{display:block;color:var(--ink)}
-.print-only{display:none}
-@media print{.navbar,.topbar,.mobile-bar,.site-footer,.no-print{display:none!important} .print-only{display:block} .round{break-inside:auto;border:0;padding:0} .table-wrap{overflow:visible} .log{min-width:0} textarea,input,select{border:0!important;padding:0!important;resize:none}}
-</style>
+
 <header class="page-head">
   <div class="container">
     <nav class="crumbs" aria-label="Ruta de navegación"><ol><li><a href="prototipo.html">Prototipo</a></li><li><span aria-current="page">Rondas de revisión</span></li></ol></nav>
@@ -257,7 +258,7 @@
       <dt>Cliente</dt><dd>CAMI · Centro de Atención Médica Integral, Xochimilco</dd>
       <dt>Proveedor</dt><dd>Benítez Consulting Group, S.A.S.</dd>
       <dt>Responsable</dt><dd>Dr. Jorge Alejandro Benítez Martínez</dd>
-      <dt>Versión en revisión</dt><dd>2.6 (30 de septiembre de 2026)</dd>
+      <dt>Versión en revisión</dt><dd>2.7 (30 de septiembre de 2026)</dd>
       <dt>Entregables</dt><dd>Prototipo interactivo y guía de estilo · Páginas de directorio, citas y noticias · Auditoría WCAG 2.1 AA · Dos rondas de revisión documentadas</dd>
     </dl>
   </section>
@@ -274,6 +275,15 @@
     <p class="small text-muted-2 mt-3 mb-0">Los comentarios fuera de alcance o una tercera ronda se cotizan por separado.</p>
   </section>
 
+  <section class="mb-5" aria-labelledby="t-chg27">
+    <h2 id="t-chg27" class="h3 mb-3">Cambios v2.6 → v2.7</h2>
+    <ul style="max-width:72ch">
+      <li>Nuevo ícono del botón de opciones de accesibilidad. «Noticias» pasa al final del menú.</li>
+      <li>Compatibilidad: prefijo -webkit- para el efecto del menú en Safari, respaldo de :has() para Firefox anterior a 121, respaldo de la unidad dvh, y el celular de citas acepta el formato con lada +52.</li>
+      <li>Revisión de las 31 páginas en Chromium a 375, 768 y 1366 px: sin errores de JavaScript, recursos rotos ni desplazamiento horizontal. axe-core sin violaciones WCAG 2.1 AA en celular y escritorio. Validador del W3C sin errores en las páginas revisadas.</li>
+      <li>Pendiente: prueba en Safari (iPhone y Mac) y Firefox reales (V-04 de la Ronda 2).</li>
+    </ul>
+  </section>
   <section class="mb-5" aria-labelledby="t-chg26">
     <h2 id="t-chg26" class="h3 mb-3">Cambios v2.5 → v2.6</h2>
     <ul style="max-width:72ch">

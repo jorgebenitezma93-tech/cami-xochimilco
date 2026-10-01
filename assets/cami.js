@@ -50,3 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
     if (nav && nav.classList.contains("show") && window.bootstrap) bootstrap.Collapse.getOrCreateInstance(nav).hide();
   }));
 });
+
+/* Compatibilidad: marca la opción elegida en navegadores sin :has() (Firefox anterior a 121) */
+(function () {
+  const syncOpts = () => document.querySelectorAll(".opt").forEach(o => {
+    const i = o.querySelector("input"); if (!i) return;
+    o.classList.toggle("is-checked", i.checked); o.classList.toggle("is-disabled", i.disabled);
+  });
+  document.addEventListener("change", e => { if (e.target.closest && e.target.closest(".opt")) syncOpts(); });
+  document.addEventListener("DOMContentLoaded", () => {
+    syncOpts();
+    new MutationObserver(syncOpts).observe(document.body, { childList: true, subtree: true });
+  });
+})();

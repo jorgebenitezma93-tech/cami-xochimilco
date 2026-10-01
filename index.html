@@ -73,7 +73,7 @@ h1,h2,h3,h4,h5{font-weight:700;letter-spacing:-.02em;color:var(--ink)}
 .topbar i{color:var(--cami-azul)}
 
 /* Navbar */
-.navbar{background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:.6rem 0}
+.navbar{background:rgba(255,255,255,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);padding:.6rem 0}
 .logo-svg{display:block;height:54px;width:auto;aspect-ratio:278/172}
 .logo-svg.logo-lg{height:72px}
 .navbar .nav-link{font-weight:500;color:var(--ink);padding:.6rem 0}
@@ -519,9 +519,9 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
           <a class="nav-link dropdown-toggle" href="#servicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
           <div class="dropdown-menu services" id="svcMenu"><!-- se llena desde los datos de servicios --></div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
         <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
         <li class="nav-item ms-lg-2 my-2 my-lg-0"><a class="btn btn-primary w-100" href="citas.html">Agendar cita</a></li>
       </ul>
     </div>
@@ -590,11 +590,11 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
 </div>
 
 <!-- Manifiesto -->
-<section class="manifesto" id="manifesto">
+<div class="manifesto" id="manifesto">
   <div class="container">
     <p id="manifestoText">El dolor no es normal. No tienes que acostumbrarte a vivir con él. Tiene causa, tiene tratamiento, y desde 1998 en CAMI tenemos un equipo de médicos, fisioterapeutas, psicólogos y enfermeras dedicado a encontrarla.</p>
   </div>
-</section>
+</div>
 
 <!-- Tratamiento avanzado de heridas -->
 <section class="section pt-0" id="heridas">
@@ -912,7 +912,7 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
 </footer>
 
 <!-- Modal de servicio -->
-<div class="modal fade" id="svcModal" tabindex="-1" aria-labelledby="svcModalTitle" aria-hidden="true">
+<div class="modal fade" id="svcModal" tabindex="-1" role="dialog" aria-labelledby="svcModalTitle" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable modal-fullscreen-sm-down">
     <div class="modal-content">
       <div class="modal-header">
@@ -998,7 +998,8 @@ const waMsg = s => `Hola CAMI, quiero información sobre ${s.name.toLowerCase()}
 
 // Menú desplegable
 document.getElementById("svcMenu").innerHTML = SERVICES.map((s, i) =>
-  `<button class="dropdown-item${i === 0 ? " featured" : ""}" type="button" data-open="${s.id}"><b>${esc(s.name)}</b><small>${esc(s.short)}</small></button>`).join("");
+  `<button class="dropdown-item${i === 0 ? " featured" : ""}" type="button" data-open="${s.id}"><b>${esc(s.name)}</b><small>${esc(s.short)}</small></button>`).join("") +
+  `<a class="dropdown-item featured" href="servicios.html"><b>Ver todos los servicios</b><small>Información completa de cada servicio</small></a>`;
 
 // Tarjetas (sin la de heridas, que ya tiene su propia sección)
 document.getElementById("svcGrid").innerHTML = SERVICES.slice(1).map(s =>

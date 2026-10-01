@@ -1,4 +1,4 @@
-# CAMI Xochimilco · Entregables v2.6
+# CAMI Xochimilco · Entregables v2.7
 
 Sube el contenido de esta carpeta, incluida la carpeta `assets/`, a la raíz del repositorio `cami-xochimilcoV2` (reemplaza los archivos existentes). **No subas** las carpetas `integraciones/` (configuración de la agenda) ni `herramientas/` (generador de las páginas de servicio).
 
@@ -32,5 +32,9 @@ Promociones: 3, 6, 9 y 12 meses sin intereses (todas las tarjetas de crédito ex
 ## Cambios v2.5 → v2.6
 
 Una página por servicio (13) y una página general de servicios para aparecer en Google. Para cambiar el texto de un servicio, edita `herramientas/servicios.json` y ejecuta `herramientas/generar-servicios.ps1`. La página de medicina regenerativa no se indexa en Google hasta resolver D-13.
+
+## Cambios v2.6 → v2.7
+
+Nuevo ícono de accesibilidad, «Noticias» al final del menú y ajustes de compatibilidad con Safari y Firefox. Revisión en Chromium de las 31 páginas a 375, 768 y 1366 px, axe-core y validador del W3C sin errores. Falta probar en Safari y Firefox reales.
 
 Pendiente de CAMI: datos del equipo, visto bueno médico de artículos y decisiones D-01 a D-14 (ver `revisiones.html`).
