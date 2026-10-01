@@ -51,3 +51,7 @@
 .topbar a{display:inline-flex;align-items:center;min-height:44px}
 .info-list a{display:inline-flex;align-items:center;min-height:44px}
 .done-panel .btn,.side-card .btn{min-height:44px}
+
+/* v2.3 · Barra superior en un solo renglón en pantallas medianas */
+@media (max-width:1199.98px){.topbar span:first-child{display:none}}
+.topbar .container{gap:1rem}

@@ -327,6 +327,7 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
 @media (min-width:1400px){.track{padding:0 calc((100vw - 1320px) / 2 + 12px)}}
 </style>
 <link href="assets/cami-a11y.css" rel="stylesheet">
+<script src="assets/cami-opciones.js"></script>
 </head>
 <body>
 <a class="skip-link" href="#inicio">Saltar al contenido</a>
@@ -518,8 +519,8 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
           <a class="nav-link dropdown-toggle" href="#servicios" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
           <div class="dropdown-menu services" id="svcMenu"><!-- se llena desde los datos de servicios --></div>
         </li>
-        <li class="nav-item"><a class="nav-link" href="directorio.html">Directorio</a></li>
         <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+        <li class="nav-item"><a class="nav-link" href="promociones.html">Promociones</a></li>
         <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
         <li class="nav-item ms-lg-2 my-2 my-lg-0"><a class="btn btn-primary w-100" href="citas.html">Agendar cita</a></li>
       </ul>
@@ -582,7 +583,7 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
     <div class="row row-cols-2 row-cols-md-4 g-0">
       <div class="col item"><b>Desde <span data-count="1998" data-plain>1998</span></b><span>Más de 25 años cuidando de ti</span></div>
       <div class="col item"><b><span data-count="4.3" data-dec="1">4.3</span> <span class="stars" aria-hidden="true">★</span><span class="visually-hidden"> de 5 estrellas</span></b><span>20 opiniones en Google</span></div>
-      <div class="col item"><b><span data-count="12">12</span> servicios</b><span>Atención integral en un lugar</span></div>
+      <div class="col item"><b><span data-count="13">13</span> servicios</b><span>Atención integral en un lugar</span></div>
       <div class="col item"><b>Lun a Sáb</b><span>Turno matutino y vespertino</span></div>
     </div>
   </div>
@@ -680,6 +681,7 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
       <p class="reveal">Elige un servicio para conocer en qué consiste.</p>
     </div>
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3" id="svcGrid"></div>
+    <p class="text-center mt-4 mb-0"><a class="btn btn-outline-primary" href="servicios.html">Ver todos los servicios</a></p>
   </div>
 </section>
 
@@ -810,7 +812,7 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
       <h2 class="mt-2 reveal">Da el primer paso.</h2>
       <div class="amount my-3"><span class="from">desde</span>$<span data-count="500">500</span></div>
       <p class="text-muted-2 mx-auto reveal" style="max-width:560px">Sal de tu consulta con un diagnóstico claro y un plan de tratamiento con costo, antes de empezar.</p>
-      <div class="pay reveal"><span>Efectivo</span><span>Débito</span><span>Crédito</span><span>American Express</span><span>Tarjeta para el Bienestar</span></div>
+      <div class="pay reveal"><span>Efectivo</span><span>Débito</span><span>Crédito</span><span>American Express</span><span>Tarjeta para el Bienestar</span><span>Meses sin intereses</span></div>
       <div class="d-flex flex-column flex-sm-row gap-2 justify-content-center reveal">
         <a class="btn btn-whatsapp btn-lg js-wa" data-msg="Hola CAMI, quiero agendar una consulta de valoración." href="#contacto"><i class="bi bi-whatsapp me-2" aria-hidden="true"><svg><use href="#bi-whatsapp"/></svg></i>Agendar por WhatsApp</a>
         <a class="btn btn-outline-primary btn-lg" href="tel:+525541680806"><i class="bi bi-telephone me-2" aria-hidden="true"><svg><use href="#bi-telephone"/></svg></i>Llamar</a>
@@ -873,7 +875,7 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
       <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1" aria-expanded="true">¿Cuál es el costo de la consulta?</button></h3>
         <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc"><div class="accordion-body">La consulta de valoración tiene un costo desde $500. En ella el médico revisa tu caso y te explica el tratamiento recomendado, el número estimado de sesiones y su costo.</div></div></div>
       <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2" aria-expanded="false">¿Qué formas de pago aceptan?</button></h3>
-        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Efectivo, tarjetas de débito y crédito (incluida American Express) y Tarjeta para el Bienestar.</div></div></div>
+        <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Efectivo, tarjetas de débito y crédito (incluida American Express) y Tarjeta para el Bienestar. Puedes pagar a 3, 6, 9 o 12 meses sin intereses con tarjetas de crédito, excepto American Express, Banamex y BBVA (Bancomer), a partir de 5 terapias. Consulta nuestras <a href="promociones.html">promociones</a>.</div></div></div>
       <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3" aria-expanded="false">¿Qué tipo de heridas atienden?</button></h3>
         <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Heridas que tardan en sanar, como úlceras por pie diabético o por várices, úlceras por presión y heridas postquirúrgicas. En la valoración revisamos la herida y te indicamos el tratamiento y la frecuencia de curaciones.</div></div></div>
       <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4" aria-expanded="false">¿Necesito una orden médica?</button></h3>
@@ -898,7 +900,7 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
         <a class="logo d-inline-block mb-3" href="#inicio"><svg class="logo-svg logo-lg" role="img" aria-label="CAMI Centro de Atención Médica Integral"><use href="#cami-logo"/></svg></a>
         <p class="mb-0">Centro de Atención Médica Integral.<br>Desde 1998 cuidando de ti.</p>
       </div>
-      <div class="col-6 col-md-3"><h2>Explora</h2><a href="#heridas">Tratamiento de heridas</a><a href="#servicios">Rehabilitación física</a><a href="#servicios">Rodillas y cadera</a><a href="#servicios">Terapia psicológica</a><a href="#servicios">Todos los servicios</a><a href="directorio.html">Directorio</a><a href="noticias.html">Noticias y consejos</a><a href="citas.html">Agendar cita</a></div>
+      <div class="col-6 col-md-3"><h2>Explora</h2><a href="servicio-tratamiento-de-heridas.html">Tratamiento de heridas</a><a href="servicio-rehabilitacion-fisica.html">Rehabilitación física</a><a href="servicio-rodillas-cadera-cartilago.html">Rodillas y cadera</a><a href="servicio-terapia-psicologica.html">Terapia psicológica</a><a href="servicios.html">Todos los servicios</a><a href="noticias.html">Noticias y consejos</a><a href="promociones.html">Promociones</a><a href="citas.html">Agendar cita</a></div>
       <div class="col-6 col-md-4"><h2>Contacto</h2><a href="https://wa.me/525560229681" target="_blank" rel="noopener">WhatsApp para citas: 55 6022 9681</a><a href="tel:+525541680806">Tel. 55 4168 0806</a><a href="tel:+525567953960">Tel. 55 6795 3960</a><a href="https://www.facebook.com/camixochimilco/" target="_blank" rel="noopener">Facebook</a></div>
     </div>
     <hr class="my-4">
@@ -944,6 +946,8 @@ document.documentElement.classList.add("js");
 const WHATSAPP = "525560229681"; // Celular de CAMI (52 + 10 dígitos)
 
 /* ===== Datos de servicios: una sola fuente para menú, tarjetas, formulario y ventana ===== */
+/* Página propia de cada servicio */
+const SERVICE_PAGES = { "heridas": "servicio-tratamiento-de-heridas.html", "consulta": "servicio-consulta-general.html", "rehab": "servicio-rehabilitacion-fisica.html", "rodillas": "servicio-rodillas-cadera-cartilago.html", "psico": "servicio-terapia-psicologica.html", "pie": "servicio-pie-diabetico-neuropatia.html", "varices": "servicio-varices.html", "facial": "servicio-paralisis-facial.html", "acu": "servicio-acupuntura.html", "homeo": "servicio-homeopatia.html", "pisada": "servicio-estudio-de-la-pisada.html", "plantillas": "servicio-plantillas-ortopedicas.html", "regenerativa": "servicio-medicina-regenerativa.html" };
 const SERVICES = [
   { id: "heridas", icon: "bi-bandaid", kind: "Clínica de heridas", name: "Tratamiento avanzado de heridas", short: "Curación especializada de heridas que tardan en sanar.",
     what: "Atendemos heridas que tardan en sanar mediante técnicas avanzadas de curación, con valoración médica y seguimiento cercano, con el objetivo de favorecer la cicatrización y reducir el riesgo de complicaciones.",
@@ -980,7 +984,12 @@ const SERVICES = [
     helps: ["Dolor de pies, rodillas o cadera", "Pie plano o cavo", "Mala postura", "Diseño de plantillas a la medida", "Deportistas"] },
   { id: "plantillas", icon: "bi-rulers", kind: "Ortopedia", name: "Plantillas ortopédicas", short: "A la medida, para corregir la pisada.",
     what: "Plantillas hechas a la medida a partir de tu estudio de la pisada (baropodometría). Alinean el pie y distribuyen mejor el peso para aliviar el dolor de pies, rodillas, cadera y espalda.",
-    helps: ["Pie plano o cavo", "Dolor de talón", "Dolor de rodilla y espalda", "Mala postura"] }
+    helps: ["Pie plano o cavo", "Dolor de talón", "Dolor de rodilla y espalda", "Mala postura"] },
+  { id: "regenerativa", icon: "bi-heart-pulse", kind: "Medicina regenerativa", name: "Medicina regenerativa en enfermedades crónico-degenerativas", short: "Valoración de una opción complementaria en padecimientos crónicos.",
+    what: "Si vives con una enfermedad crónico-degenerativa, te ofrecemos una valoración para saber si la medicina regenerativa puede ser una opción complementaria a tu tratamiento habitual. El médico revisa tu historial y tus estudios, y te explica con claridad sus alcances, sus límites y su costo antes de cualquier decisión.",
+    helpsTitle: "Pacientes que nos consultan con",
+    helps: ["Diabetes", "Hipertensión", "Artritis", "Lupus", "Osteoporosis", "Pérdida de memoria", "Arritmias cardíacas", "Fatiga mental"],
+    note: "No sustituye el tratamiento indicado por tu médico: no lo suspendas. No todos los pacientes son candidatos y los resultados varían en cada persona. Sujeto a valoración médica." }
 ];
 
 const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
@@ -1017,13 +1026,14 @@ function render(i) {
         <span class="kind">${esc(s.kind)}</span>
         <h3 id="svcModalTitle">${esc(s.name)}</h3>
         <p class="what">${esc(s.what)}</p>
-        <h4>Te ayuda con</h4>
+        <h4>${esc(s.helpsTitle || "Te ayuda con")}</h4>
         <div>${s.helps.map(h => `<span class="chip">${esc(h)}</span>`).join("")}</div>
         ${s.note ? `<p class="small text-muted-2 mt-3 mb-0">${esc(s.note)}</p>` : ""}
         <div class="d-flex flex-column flex-sm-row gap-2 mt-4">
           <a class="btn btn-whatsapp js-wa" data-msg="${esc(waMsg(s))}" href="#contacto"><i class="bi bi-whatsapp me-2" aria-hidden="true"><svg><use href="#bi-whatsapp"/></svg></i>Solicitar información</a>
           <a class="btn btn-outline-primary" href="tel:+525541680806"><i class="bi bi-telephone me-2" aria-hidden="true"><svg><use href="#bi-telephone"/></svg></i>Llamar</a>
         </div>
+        ${SERVICE_PAGES[s.id] ? `<p class="mt-3 mb-0"><a href="${SERVICE_PAGES[s.id]}">Ver toda la información del servicio</a></p>` : ""}
       </div>
     </div>`;
   setWa(document.getElementById("svcBody"));
@@ -1088,7 +1098,7 @@ document.getElementById("leadForm").addEventListener("submit", e => {
 
 /* ===== Dinamismo: GSAP + ScrollTrigger + Lenis (con respaldo si no cargan) ===== */
 (function motion() {
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches || (window.CAMI_OPCIONES && CAMI_OPCIONES.sinMovimiento());
   const fallbackReveal = () => {
     if (!("IntersectionObserver" in window)) { document.querySelectorAll(".reveal").forEach(e => e.classList.add("in")); return; }
     const io = new IntersectionObserver(es => es.forEach(x => { if (x.isIntersecting) { x.target.classList.add("in"); io.unobserve(x.target); } }), { rootMargin: "0px 0px -8% 0px" });

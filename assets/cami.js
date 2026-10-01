@@ -5,6 +5,9 @@ const CAMI = {
   // D-10 · Respaldo de solicitudes: URL que recibe una copia de cada solicitud de cita
   // (Google Apps Script, Formspree u otro). Vacío = solo WhatsApp. Si se activa, mencionarlo en el aviso de privacidad.
   BACKUP_URL: "",
+  // D-14 · Agenda en línea. proveedor: "google" (página de citas de Google Calendar), "cal" (Cal.com) o "calendly".
+  // url: enlace público de la página de reservas. Vacío = solo la solicitud por WhatsApp. Ver integraciones/GUIA-AGENDA.md
+  AGENDA: { proveedor: "", url: "" },
   SERVICES: [
     { id: "heridas", icon: "bi-bandaid", kind: "Clínica de heridas", name: "Tratamiento avanzado de heridas", short: "Curación especializada de heridas que tardan en sanar." },
     { id: "consulta", icon: "bi-clipboard2-pulse", kind: "Medicina general", name: "Consulta general", short: "Valoración, diagnóstico y control de enfermedades crónicas." },
@@ -17,7 +20,8 @@ const CAMI = {
     { id: "acu", icon: "bi-bullseye", kind: "Terapia complementaria", name: "Acupuntura", short: "Apoyo para el dolor, la tensión y el estrés." },
     { id: "homeo", icon: "bi-capsule", kind: "Terapia complementaria", name: "Homeopatía", short: "Tratamiento complementario e individual." },
     { id: "pisada", icon: "bi-graph-up", kind: "Biomecánica", name: "Estudio de la pisada (baropodometría)", short: "Análisis estático y dinámico de tu marcha." },
-    { id: "plantillas", icon: "bi-rulers", kind: "Ortopedia", name: "Plantillas ortopédicas", short: "A la medida, para corregir la pisada." }
+    { id: "plantillas", icon: "bi-rulers", kind: "Ortopedia", name: "Plantillas ortopédicas", short: "A la medida, para corregir la pisada." },
+    { id: "regenerativa", icon: "bi-heart-pulse", kind: "Medicina regenerativa", name: "Medicina regenerativa en enfermedades crónico-degenerativas", short: "Valoración de una opción complementaria en padecimientos crónicos." }
   ],
   esc: s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])),
   waLink: m => "https://wa.me/" + CAMI.WHATSAPP + "?text=" + encodeURIComponent(m),
