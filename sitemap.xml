@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Mapa del sitio de CAMI Xochimilco para Google Search Console.
-  Fuera a propósito:
-  - servicio-medicina-regenerativa.html: noindex hasta la aprobación legal y sanitaria (D-13).
-  - noticias.html y noticia-*.html: contenido de ejemplo hasta el visto bueno médico (D-07).
-  - directorio, prototipo, guía de estilo, auditoría y revisiones: páginas internas (noindex).
-  Si cambia el dominio, reemplaza la dirección base en todas las líneas <loc>.
--->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://camixochimilco.com.mx/</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicios.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-consulta-general.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-rehabilitacion-fisica.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-rodillas-cadera-cartilago.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-pie-diabetico-neuropatia.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-tratamiento-de-heridas.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-varices.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-paralisis-facial.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-estudio-de-la-pisada.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-plantillas-ortopedicas.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-acupuntura.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-homeopatia.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/servicio-terapia-psicologica.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/citas.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/promociones.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/accesibilidad.html</loc><lastmod>2026-09-30</lastmod></url>
-  <url><loc>https://camixochimilco.com.mx/aviso-de-privacidad.html</loc><lastmod>2026-09-30</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicios.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-consulta-general.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-rehabilitacion-fisica.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-rodillas-cadera-cartilago.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-pie-diabetico-neuropatia.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-tratamiento-de-heridas.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-varices.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-paralisis-facial.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-estudio-de-la-pisada.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-plantillas-ortopedicas.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-acupuntura.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-homeopatia.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/servicio-terapia-psicologica.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/citas.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/promociones.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/accesibilidad.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/aviso-de-privacidad.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/noticias.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/noticia-etapas-pie-diabetico.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/noticia-pie-diabetico.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/noticia-estudio-pisada.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/noticia-heridas-que-no-cierran.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/noticia-rodilla-escaleras.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/noticia-ansiedad-dolor.html</loc><lastmod>2026-10-09</lastmod></url>
+  <url><loc>https://camixochimilco.com.mx/noticia-horario.html</loc><lastmod>2026-10-09</lastmod></url>
 </urlset>

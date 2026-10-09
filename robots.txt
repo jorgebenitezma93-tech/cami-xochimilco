@@ -1,0 +1,7 @@
+# CAMI Xochimilco · https://camixochimilco.com.mx/
+# Todo el sitio se puede rastrear. Las páginas que no deben salir en buscadores
+# llevan la etiqueta <meta name="robots" content="noindex"> en su propio código.
+User-agent: *
+Allow: /
+
+Sitemap: https://camixochimilco.com.mx/sitemap.xml
