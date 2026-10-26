@@ -3,6 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Seguridad: inicio -->
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com 'sha256-0VJdYYYfBYTYVzZ7YtOgUc/UJYpcTIPCbk+IckBQHKI=' 'sha256-DdyB9KQeuvrRNHfY26Sy0EKrVy6OfpE97V0su7DfVJI='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: blob:; frame-src https://www.google.com https://maps.google.com https://calendar.google.com https://cal.com https://calendly.com; connect-src 'self' https://script.google.com https://script.googleusercontent.com; form-action 'self'; base-uri 'self'; object-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<!-- Seguridad: fin -->
 <!-- Verificación de Google Search Console: no borrar -->
 <meta name="google-site-verification" content="LgiQY8EJmeZiMxp-0yC-lzSEw8hjYQvoti-orEC7PxU">
 <title>CAMI Xochimilco · Centro de Atención Médica Integral</title>
@@ -31,7 +35,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <!-- Preguntas frecuentes del inicio (sección #faq) -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Cuál es el costo de la consulta?","acceptedAnswer":{"@type":"Answer","text":"La consulta de valoración tiene un costo desde $500. En ella el médico revisa tu caso y te explica el tratamiento recomendado, el número estimado de sesiones y su costo."}},{"@type":"Question","name":"¿Qué formas de pago aceptan?","acceptedAnswer":{"@type":"Answer","text":"Efectivo, tarjetas de débito y crédito (incluida American Express) y Tarjeta para el Bienestar. Puedes pagar a 3, 6, 9 o 12 meses sin intereses con tarjetas de crédito, excepto American Express, Banamex y BBVA (Bancomer), a partir de 5 terapias. Consulta nuestras promociones."}},{"@type":"Question","name":"¿Qué tipo de heridas atienden?","acceptedAnswer":{"@type":"Answer","text":"Heridas que tardan en sanar, como úlceras por pie diabético o por várices, úlceras por presión y heridas postquirúrgicas. En la valoración revisamos la herida y te indicamos el tratamiento y la frecuencia de curaciones."}},{"@type":"Question","name":"¿Necesito una orden médica?","acceptedAnswer":{"@type":"Answer","text":"No es indispensable. Si tienes estudios (radiografías, resonancias) o indicaciones de otro médico, tráelos a tu consulta."}},{"@type":"Question","name":"¿Cuántas sesiones voy a necesitar?","acceptedAnswer":{"@type":"Answer","text":"Depende de cada paciente. Después de la valoración te indicamos un número estimado de sesiones y los objetivos a alcanzar."}},{"@type":"Question","name":"¿Qué es el estudio baropodométrico?","acceptedAnswer":{"@type":"Answer","text":"Es un estudio de la pisada: caminas y permaneces de pie sobre una plataforma con sensores que mide la presión en cada punto de tus plantas, tu superficie de apoyo, tu centro de gravedad y cómo repartes el peso entre ambas piernas. Es rápido y no causa ninguna molestia."}},{"@type":"Question","name":"Tengo diabetes, ¿cada cuánto debo revisar mis pies?","acceptedAnswer":{"@type":"Answer","text":"Con regularidad, aunque no tengas molestias. Si notas heridas que no cierran, cambios de color, hormigueo o pérdida de sensibilidad, agenda una cita lo antes posible."}}]}</script>
 <!-- Datos estructurados de la organización. Las páginas de servicio la citan por su @id (#organizacion). -->
@@ -1023,10 +1027,10 @@ html:not(.gsap) .pstep{scroll-snap-align:start}
 </div>
 </nav>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" integrity="sha384-B2WBjDzEjJpYvhmi2UyEn7rektqkf5suS6sNoyyrf0EBAwBHdkiXxIlU0V5Ru2ed" crossorigin="anonymous"></script>
 <script>
 document.documentElement.classList.add("js");
 const WHATSAPP = "525560229681"; // Celular de CAMI (52 + 10 dígitos)
